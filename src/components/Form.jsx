@@ -1,7 +1,6 @@
 import styles from "./Form.module.css";
 import { useState } from "react";
 export default function Form({ Notes, setNotes, editedNote, setEditedNote }) {
-  // const [Note, setNote] = useState("");
   const [Note, setNote] = useState(editedNote || { content: "", done: false });
 
   const addOrEditNote = (e) => {
